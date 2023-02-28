@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import ComponenteUm from './components/ComponenteUm';
+import ComponenteDois from './components/ComponenteDois';
 
-function App() {
+function App() {  // componente principal - pto de entrada do sistema 
+  
+  const resultado = 2 + 1;  // 3
+  console.log('SPFC eh bom!')
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="container">
+      <p>
+        isso eh um paragrafo
+      </p>
+      <p>
+        O resultado é {resultado}
+      </p>  
+      <ComponenteUm />
+      <ComponenteDois />
+    </div>    
   );
 }
 
